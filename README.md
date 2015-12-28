@@ -1,7 +1,7 @@
 **PHP Files Cleaner**
 ===============
 
-![PHP Files Cleaner](https://raw.github.com/Destroy666x/MyBB-PHP-Files_cleaner/master/preview1.png "Preview")  
+![PHP Files Cleaner](https://raw.githubusercontent.com/Destroy666x/MyBB-PHP-File-Cleaner/master/preview1.png "Preview")  
 
 **Name**: PHP Files Cleaner  
 **Author**: Destroy666  
