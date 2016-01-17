@@ -21,7 +21,7 @@ if(!defined('IN_MYBB'))
 
 function PHP_files_cleaner_info()
 {
-    global $db, $lang, $custom_settingsgroup_cache;
+	global $db, $lang, $custom_settingsgroup_cache;
 
 	$lang->load('PHP_files_cleaner_acp');
 
@@ -63,7 +63,7 @@ function PHP_files_cleaner_info()
 		'version'		=> 1.0,
 		'codename'		=> 'PHP_files_cleaner',
 		'compatibility'	=> '18*'
-    );
+	);
 }
 
 
