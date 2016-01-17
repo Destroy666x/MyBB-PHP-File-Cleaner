@@ -202,9 +202,10 @@ function PHP_files_cleaner_actions()
 		if(!empty($errors))
 			$page->output_inline_error($errors);
 
+		$table = new Table;
+
 		if(!$mybb->settings['PHP_files_cleaner_leading'] && !$mybb->settings['PHP_files_cleaner_trailing'])
 		{
-			$table = new Table;
 			$table->construct_cell($lang->PHP_files_cleaner_nothing_enabled);
 			$table->construct_row();
 		}
@@ -235,7 +236,6 @@ function PHP_files_cleaner_actions()
 
 			if(empty($allfiles))
 			{
-				$table = new Table;
 				$table->construct_cell($lang->PHP_files_cleaner_nothing_found);
 				$table->construct_row();
 			}
@@ -243,7 +243,6 @@ function PHP_files_cleaner_actions()
 			{
 				$form = new Form('index.php?module=tools-system_health&amp;action=do_clean_PHP_files', 'post');
 
-				$table = new Table;
 				$table->construct_header($lang->PHP_files_cleaner_filename);
 				$table->construct_header($lang->PHP_files_cleaner_leading, array('class' => 'align_center'));
 				$table->construct_header($lang->PHP_files_cleaner_trailing, array('class' => 'align_center'));
