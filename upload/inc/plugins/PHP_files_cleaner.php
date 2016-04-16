@@ -195,8 +195,8 @@ function PHP_files_cleaner_actions()
 	{
 		global $page;
 
-		$page->output_header($lang->PHP_files_cleaner);
 		$page->add_breadcrumb_item($lang->PHP_files_cleaner);
+		$page->output_header($lang->PHP_files_cleaner);
 		$page->output_nav_tabs($sub_tabs, 'PHP_files_cleaner');
 
 		if(!empty($errors))
